@@ -813,10 +813,11 @@ section {
 }
 .historia h1{
   color: #0e54afd2;
+  
 }
 .txtH p{
   width: 400px;
-  text-align: center;
+  
   margin-top: 10px;
 }
 .imgH{
@@ -855,7 +856,7 @@ iframe{
 }
 .local p{
    color: white;
-   font-size: 15px;
+   font-size: 20px;
    
 }
 .local{
@@ -863,17 +864,17 @@ iframe{
   align-items: baseline;
 }
 .local svg{
-   margin-left: 15px;
+   margin-left: 70px;
 }
 .missao{
   background-color: #222020;
   padding: 30px;
-  border-bottom-right-radius: 100px;
+  
 }
 .visao{
   background-color: #222020;
    padding: 30px;
-   border-bottom-right-radius: 100px;
+  
    
 }
 
