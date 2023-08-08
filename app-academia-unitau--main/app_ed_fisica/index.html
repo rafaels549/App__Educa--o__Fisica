@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>App-Ed.Fisica</title>
+
+    <!-- otima fonte para o site -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- css de customizacao-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<header class="header">
+    <a href="#" class="logo"> <span>Unitau</span>Fit </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#sobre-nos">sobre nós</a>
+        <a href="#treinos">treinos</a>
+        <a href="#saiba-mais">saiba mais</a>
+        <a href="#professores">professores</a>
+        <a href="#redes-sociais">redes sociais</a>
+    </nav>
+    <nav id="sidebar" class="sidebar hide">
+
+
+
+        <a href="#" class="logo"> <span>Unitau</span>Fit </a>
+
+        <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 20 20">
+                <path fill="#ffffff"
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+            </svg>home</a>
+        <a href="#sobre-nos"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 20 20">
+                <path fill="#ffffff"
+                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234c-.2.032-.352-.176-.273-.362c.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+            </svg>sobre nós</a>
+        <a href="#treinos"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 260 260">
+                <path fill="#ffffff"
+                    d="M160 220h-.6a12.1 12.1 0 0 1-10.6-7.7L95 71.1L66.9 133a12 12 0 0 1-10.9 7H24a12 12 0 0 1 0-24h24.3l36.8-81a12 12 0 0 1 22.1.7l54.3 142.5l27.8-55.6A12.1 12.1 0 0 1 200 116h32a12 12 0 0 1 0 24h-24.6l-36.7 73.4A12.1 12.1 0 0 1 160 220Z" />
+            </svg>treinos</a>
+        <a href="#saiba-mais"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 20 20">
+                <path fill="#ffffff" fill-rule="evenodd"
+                    d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z" />
+            </svg>saiba mais</a>
+        <a href="#professores"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 300 300">
+                <path fill="#ffffff"
+                    d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h13.39a8 8 0 0 0 7.23-4.57a48 48 0 0 1 86.76 0a8 8 0 0 0 7.23 4.57H216a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16ZM104 168a32 32 0 1 1 32-32a32 32 0 0 1-32 32Zm112 32h-56.57a63.93 63.93 0 0 0-13.16-16H192a8 8 0 0 0 8-8V80a8 8 0 0 0-8-8H64a8 8 0 0 0-8 8v96a8 8 0 0 0 6 7.75A63.72 63.72 0 0 0 48.57 200H40V56h176Z" />
+            </svg>professores</a>
+        <a href="#redes-sociais">redes sociais</a>
+
+    </nav>
+</header>
+
+<!-- header section termina-->
+<!-- home section comeca-->
+
+<section class="home" id="home">
+
+    <div class="swiper home-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(images/home-bg-1.jpg) no-repeat;">
+                <div class="content">
+                    <span> seja saudavel, seja fit.</span>
+                    <h3> seja mais forte que suas desculpas.</h3>
+                    <a href="#" class="btn"> comece agora!</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-bg-2.jpg) no-repeat;">
+                <div class="content">
+                    <span> seja saudavel, seja fit</span>
+                    <h3> seja mais forte que suas desculpas.</h3>
+                    <a href="#" class="btn"> comece agora!</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(images/home-bg-3.jpg) no-repeat;">
+                <div class="content">
+                    <span> seja saudavel, seja fit</span>
+                    <h3> seja mais forte que suas desculpas.</h3>
+                    <a href="#" class="btn"> comece agora!</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- home section termina-->
+
+<!-- sobre nos section comeca-->
+
+<section class="about" id="about">
+
+    <div class="imagem">
+        <img src="images/about-img.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <span>sobre nós</span>
+        <h3 class="title">Todo dia é uma nova chance de ser melhor!</h3>
+        <p>Exemplo de texto</p>
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fas fa-check"></i>Corpo e mente</h3>
+                <p>Exemplo de texto</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>Vida saudavel</h3>
+                <p>Exemplo de texto</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>Treinos</h3>
+                <p>Exemplo de texto</p>
+            </div>
+            <div class="box">
+                <h3><i class="fas fa-check"></i>Dicas de alimentacao</h3>
+                <p>Exemplo de texto</p>
+            </div>
+        </div>
+        <a href="#" class="btn">leia mais</a>
+    </div>
+
+</section>
+
+<!-- sobre nos section termina-->
+<!-- treinos section comeca-->
+
+<section class="features" id="features">
+
+    <h1 class="heading"> <span>Treinos</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+                <img src="images/f-img-1.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="images/icon-1.png" alt="">
+                <h3>Treinos avançados</h3>
+                <p>Exemplo de texto</p>
+                <a href="#" class="btn">Saiba mais..</a>
+            </div>
+        </div>
+
+        <div class="box second">
+            <div class="image">
+                <img src="images/f-img-2.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="images/icon-2.png" alt="">
+                <h3>Treinos masculinos</h3>
+                <p>Exemplo de texto</p>
+                <a href="#" class="btn">Saiba mais..</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+                <img src="images/f-img-3.jpg" alt="">
+            </div>
+            <div class="content">
+                <img src="images/icon-3.png" alt="">
+                <h3>Treinos femininos</h3>
+                <p>Exemplo de texto</p>
+                <a href="#" class="btn">Saiba mais..</a>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- features section ends -->
+
+<!-- pricing section starts  -->
+
+<section class="pricing" id="pricing">
+
+    <div class="information">
+        <span>plano de preços</span>
+        <h3>plano de preços acessível para o seu bolso</h3>
+        <p>Exemplo de texto</p>
+        <p> <i class="fas fa-check"></i> exercícios aeróbicos </p>
+        <p> <i class="fas fa-check"></i> musculação </p>
+        <p> <i class="fas fa-check"></i> planos de dieta </p>
+        <p> <i class="fas fa-check"></i> resultados gerais </p>
+        <a href="#" class="btn">todos os preços</a>
+    </div>
+
+    <div class="plan basic">
+        <h3>plano basico</h3>
+        <div class="price"><span>R$</span>30,00<span>/M</span></div>
+        <div class="list">
+            <p> <i class="fas fa-check"></i> personal training </p>
+            <p> <i class="fas fa-check"></i> exercícios aeróbicos </p>
+            <p> <i class="fas fa-check"></i> musculação </p>
+            <p> <i class="fas fa-check"></i> planos de dieta </p>
+            <p> <i class="fas fa-check"></i> resultados gerais </p>
+        </div>
+        <a href="#" class="btn">comece agora!</a>
+    </div>
+
+    <div class="plan">
+        <h3>plano premium</h3>
+        <div class="price"><span>R$</span>90,00<span>/M</span></div>
+        <div class="list">
+            <p> <i class="fas fa-check"></i> personal training </p>
+            <p> <i class="fas fa-check"></i> exercícios aeróbicos </p>
+            <p> <i class="fas fa-check"></i> musculação </p>
+            <p> <i class="fas fa-check"></i> planos de dieta </p>
+            <p> <i class="fas fa-check"></i> resultados gerais </p>
+        </div>
+        <a href="#" class="btn">comece agora!</a>
+    </div>
+
+</section>
+
+<!-- pricing section ends -->
+
+<!-- trainers section starts  -->
+
+<section class="trainers" id="trainers">
+
+    <h1 class="heading"> <span>Professores experientes</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/trainer-1.jpg" alt="">
+            <div class="content">
+                <span>Professor e personal</span>
+                <h3>john deo</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/trainer-2.jpg" alt="">
+            <div class="content">
+                <span>Professora e personal</span>
+                <h3>Camila deo</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/trainer-3.jpg" alt="">
+            <div class="content">
+                <span>Professor</span>
+                <h3>Felipe Deo</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/trainer-4.jpg" alt="">
+            <div class="content">
+                <span>Professora e personal</span>
+                <h3>Catarina deo</h3>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-pinterest"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- trainers section ends -->
+
+<!-- banner section starts  -->
+
+<section class="banner">
+
+    <span>Junte-se a nós agora!</span>
+    <h3>ganhe até 50% de desconto</h3>
+    <p>Exemplo de texto</p>
+    <a href="#" class="btn">Obter Desconto</a>
+
+</section>
+
+<!-- banner section ends -->
+
+<!-- review section starts  -->
+
+<section class="review">
+
+    <div class="information">
+        <span>Depoimentos</span>
+        <h3>o que nossos alunos dizem</h3>
+        <p>Exemplo de texto</p>
+        <a href="#" class="btn">Saiba mais..</a>
+    </div>
+
+    <div class="swiper review-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <p>Exemplo de comentario de um aluno</p>
+                <div class="user">
+                    <img src="images/pic-1.png" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>Cursando Eng. Civil</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Exemplo de comentario de um aluno</p>
+                <div class="user">
+                    <img src="images/pic-2.png" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>Cursando Eng. Civil</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Exemplo de comentario de um aluno</p>
+                <div class="user">
+                    <img src="images/pic-3.png" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>Cursando Eng. Civil</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <p>Exemplo de comentario de um aluno</p>
+                <div class="user">
+                    <img src="images/pic-4.png" alt="">
+                    <div class="info">
+                        <h3>john deo</h3>
+                        <span>Cursando Eng. Civil</span>
+                    </div>
+                    <i class="fas fa-quote-left"></i>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- review section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+    <h1 class="heading"> <span>Postagens Diárias</span> </h1>
+
+    <div class="swiper blogs-slider">
+
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">Postado por "user"</a> <span>|</span> <a href="#">21 de Agosto,
+                            2023</a> </div>
+                    <h3>Ser fitness não é sobre ser melhor do que outra pessoa</h3>
+                    <p>Exemplo de texto..</p>
+                    <a href="#" class="btn">Saiba mais..</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-2.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">Postado por "user"</a> <span>|</span> <a href="#">21 de Agosto,
+                            2023</a> </div>
+                    <h3>Ser fitness não é sobre ser melhor do que outra pessoa</h3>
+                    <p>Exemplo de texto..</p>
+                    <a href="#" class="btn">Saiba mais..</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-3.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">Postado por "user"</a> <span>|</span> <a href="#">21 de Agosto,
+                            2023</a> </div>
+                    <h3>Ser fitness não é sobre ser melhor do que outra pessoa</h3>
+                    <p>Exemplo de texto..</p>
+                    <a href="#" class="btn">Saiba mais..</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-4.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">Postado por "user"</a> <span>|</span> <a href="#">21 de Agosto,
+                            2023</a> </div>
+                    <h3>Ser fitness não é sobre ser melhor do que outra pessoa</h3>
+                    <p>Exemplo de texto..</p>
+                    <a href="#" class="btn">Saiba mais..</a>
+                </div>
+            </div>
+
+            <div class="swiper-slide slide">
+                <div class="image">
+                    <img src="images/blog-5.jpg" alt="">
+                </div>
+                <div class="content">
+                    <div class="link"> <a href="#">by user</a> <span>|</span> <a href="#">21 de Agosto, 2023</a> </div>
+                    <h3>Ser fitness não é sobre ser melhor do que outra pessoa</h3>
+                    <p>Exemplo de texto..</p>
+                    <a href="#" class="btn">Saiba mais..</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>links rapidos</h3>
+            <a class="links" href="#home">home</a>
+            <a class="links" href="#about">sobre nós</a>
+            <a class="links" href="#features">features</a>
+            <a class="links" href="#pricing">preços</a>
+            <a class="links" href="#trainers">Professores</a>
+            <a class="links" href="#blogs">Redes sociais</a>
+        </div>
+
+        <div class="box">
+            <h3>Horarios de funcionamento</h3>
+            <p> Segunda-feira : <i> 7:00am - 10:30pm </i> </p>
+            <p> Terça-feira : <i> 7:00am - 10:30pm </i> </p>
+            <p> Quarta-feira : <i> 7:00am - 10:30pm </i> </p>
+            <p> Quinta-feira : <i> 7:00am - 10:30pm </i> </p>
+            <p> Sexta-feira : <i> 7:00am - 10:30pm </i> </p>
+            <p> Sabado : <i> 7:00am - 10:30pm </i> </p>
+            <p> Domingo : <i> Fechado </i> </p>
+        </div>
+
+        <div class="box">
+            <h3>Contatos</h3>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+            <p> <i class="fas fa-envelope"></i> abcdefg@unitau.br </p>
+            <p> <i class="fas fa-map"></i> Taubaté, São Paulo - 40028922 </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Noticias</h3>
+            <p>Se inscreva para receber mais informações</p>
+            <form action="">
+                <input type="email" name="" class="email" placeholder="Escreva seu e-mail" id="">
+                <input type="submit" value="Se inscreva" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="credit">Unitau© todos os direitos reservados! </div>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="script/script.js"></script>
+
+</body>
+
+</html>

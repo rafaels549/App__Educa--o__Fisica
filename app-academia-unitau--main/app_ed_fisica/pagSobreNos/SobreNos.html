@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>App-Ed.Fisica</title>
+
+    <!-- otima fonte para o site -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- css de customizacao-->
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<header class="header">
+    <a href="#" class="logo"> <span>Unitau</span>Fit </a>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#sobre-nos">sobre nós</a>
+        <a href="#treinos">treinos</a>
+        <a href="#saiba-mais">saiba mais</a>
+        <a href="#professores">professores</a>
+        <a href="#redes-sociais">redes sociais</a>
+    </nav>
+    <nav id="sidebar" class="sidebar hide">
+
+
+
+        <a href="#" class="logo"> <span>Unitau</span>Fit </a>
+
+        <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 20 20">
+                <path fill="#ffffff"
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5Z" />
+            </svg>home</a>
+        <a href="#sobre-nos"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 20 20">
+                <path fill="#ffffff"
+                    d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234c-.2.032-.352-.176-.273-.362c.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM4.5 5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h7a.5.5 0 0 0 0-1h-7zm0 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
+            </svg>sobre nós</a>
+        <a href="#treinos"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 260 260">
+                <path fill="#ffffff"
+                    d="M160 220h-.6a12.1 12.1 0 0 1-10.6-7.7L95 71.1L66.9 133a12 12 0 0 1-10.9 7H24a12 12 0 0 1 0-24h24.3l36.8-81a12 12 0 0 1 22.1.7l54.3 142.5l27.8-55.6A12.1 12.1 0 0 1 200 116h32a12 12 0 0 1 0 24h-24.6l-36.7 73.4A12.1 12.1 0 0 1 160 220Z" />
+            </svg>treinos</a>
+        <a href="#saiba-mais"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 20 20">
+                <path fill="#ffffff" fill-rule="evenodd"
+                    d="M4.475 5.458c-.284 0-.514-.237-.47-.517C4.28 3.24 5.576 2 7.825 2c2.25 0 3.767 1.36 3.767 3.215c0 1.344-.665 2.288-1.79 2.973c-1.1.659-1.414 1.118-1.414 2.01v.03a.5.5 0 0 1-.5.5h-.77a.5.5 0 0 1-.5-.495l-.003-.2c-.043-1.221.477-2.001 1.645-2.712c1.03-.632 1.397-1.135 1.397-2.028c0-.979-.758-1.698-1.926-1.698c-1.009 0-1.71.529-1.938 1.402c-.066.254-.278.461-.54.461h-.777ZM7.496 14c.622 0 1.095-.474 1.095-1.09c0-.618-.473-1.092-1.095-1.092c-.606 0-1.087.474-1.087 1.091S6.89 14 7.496 14Z" />
+            </svg>saiba mais</a>
+        <a href="#professores"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="30" viewBox="0 0 300 300">
+                <path fill="#ffffff"
+                    d="M216 40H40a16 16 0 0 0-16 16v144a16 16 0 0 0 16 16h13.39a8 8 0 0 0 7.23-4.57a48 48 0 0 1 86.76 0a8 8 0 0 0 7.23 4.57H216a16 16 0 0 0 16-16V56a16 16 0 0 0-16-16ZM104 168a32 32 0 1 1 32-32a32 32 0 0 1-32 32Zm112 32h-56.57a63.93 63.93 0 0 0-13.16-16H192a8 8 0 0 0 8-8V80a8 8 0 0 0-8-8H64a8 8 0 0 0-8 8v96a8 8 0 0 0 6 7.75A63.72 63.72 0 0 0 48.57 200H40V56h176Z" />
+            </svg>professores</a>
+        <a href="#redes-sociais">redes sociais</a>
+
+    </nav>
+</header>
+
+<!-- header section termina-->
+<!-- home section comeca-->
+
+<main>
+    <h1>Sobre <a href="#" class="logo"> <span>Unitau</span>Fit </a></h1>
+    <section class="sobre">
+        <div class="missao">
+            <h1 class="titulo">Missão</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eum, hic, mollitia eos omnis blanditiis
+                minima et quod voluptatibus ut dignissimos tempore? Voluptate est animi aspernatur blanditiis iure.
+                Velit, sit?</p>
+            <a href="#" class="btn"> comece agora!</a>
+        </div>
+
+        <div class="visao">
+            <h1 class="titulo">Visão</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates tempore architecto voluptatibus ad
+                culpa atque quos explicabo, placeat, eum optio accusantium dolorem ipsa, obcaecati dolorum aliquid quas
+                neque amet? Iure.</p>
+            <a href="#" class="btn"> comece agora!</a>
+        </div>
+    </section>
+
+    <section class="conteudo">
+        <div class="historia">
+            <h1>Nossa História</h1>
+            <div class="txtH">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque numquam quo veniam necessitatibus
+                    quisquam, officia nisi corporis libero atque, culpa dolorum perferendis non dolore ut dolores
+                    adipisci
+                    voluptas reprehenderit ipsa!</p>
+
+            </div>
+            <img src="../images/historia.png" alt="" srcset="" class="imgH">
+        </div>
+    </section>
+    <section class="mapa">
+        <h1>Nosso Departamento</h1>
+        <div class="card">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.0967148319974!2d-45.56072468824848!3d-23.02022087908853!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ccf9a9f8d5d98d%3A0xf9a94337396c3e58!2sCampus%20Juta%20-%20Universidade%20de%20Taubat%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1691438611317!5m2!1spt-BR!2sbr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="content">
+                <h1>Campus Juta</h1>
+                <div class="local">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                        <path fill="#ffffff"
+                            d="M9.5 14a2.5 2.5 0 0 0 2.5 2.5c1.23 0 2.25-.9 2.46-2.07c-1-1.01-1.83-1.98-2.48-2.93A2.51 2.51 0 0 0 9.5 14z" />
+                        <path fill="#ffffff"
+                            d="M18.65 17.08a1 1 0 0 1-1.3 0c-1.26-1.08-.7-.61-1.3-1.14c-.83 1.74-2.73 2.87-4.85 2.5a4.514 4.514 0 0 1-3.63-3.63a4.488 4.488 0 0 1 3.31-5.14C10.3 8.45 10 7.28 10 6.15c0-.75.1-1.47.28-2.15h-.4c-.56 0-1.1.24-1.48.65L7.17 6H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2v-6.03c-1.41 1.49-2.65 2.51-3.35 3.11z" />
+                        <path fill="#ffffff"
+                            d="M17.34 14.42c.37.33.95.33 1.33 0C22.22 11.25 24 8.5 24 6.15C24 2.42 21.15 0 18 0s-6 2.42-6 6.15c0 2.35 1.78 5.1 5.34 8.27zm-.07-9.17L18 3l.73 2.25H21l-1.85 1.47l.7 2.28L18 7.59L16.15 9l.7-2.28L15 5.25h2.27z" />
+                    </svg>
+                    <p>110, R. Daniel Daneli, 100 - Centro, Taubaté - SP, 12060-440</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="trainers" id="trainers">
+
+        <h1 class="heading"> <span>Desenvolvedores</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/trainer-1.jpg" alt="">
+                <div class="content">
+                    <span>Professor e personal</span>
+                    <h3>john deo</h3>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/trainer-2.jpg" alt="">
+                <div class="content">
+                    <span>Professora e personal</span>
+                    <h3>Camila deo</h3>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/trainer-3.jpg" alt="">
+                <div class="content">
+                    <span>Professor</span>
+                    <h3>Felipe Deo</h3>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/trainer-4.jpg" alt="">
+                <div class="content">
+                    <span>Professora e personal</span>
+                    <h3>Catarina deo</h3>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-pinterest"></a>
+                        <a href="#" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</main>
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>links rapidos</h3>
+            <a class="links" href="#home">home</a>
+            <a class="links" href="#about">sobre nós</a>
+            <a class="links" href="#features">features</a>
+            <a class="links" href="#pricing">preços</a>
+            <a class="links" href="#trainers">Professores</a>
+            <a class="links" href="#blogs">Redes sociais</a>
+        </div>
+
+        <div class="box">
+            <h3>Horarios de funcionamento</h3>
+            <p> Segunda-feira : <i> 7:00am - 10:30pm </i> </p>
+            <p> Terça-feira : <i> 7:00am - 10:30pm </i> </p>
+            <p> Quarta-feira : <i> 7:00am - 10:30pm </i> </p>
+            <p> Quinta-feira : <i> 7:00am - 10:30pm </i> </p>
+            <p> Sexta-feira : <i> 7:00am - 10:30pm </i> </p>
+            <p> Sabado : <i> 7:00am - 10:30pm </i> </p>
+            <p> Domingo : <i> Fechado </i> </p>
+        </div>
+
+        <div class="box">
+            <h3>Contatos</h3>
+            <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
+            <p> <i class="fas fa-phone"></i> +111-222-3333 </p>
+            <p> <i class="fas fa-envelope"></i> abcdefg@unitau.br </p>
+            <p> <i class="fas fa-map"></i> Taubaté, São Paulo - 40028922 </p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                <a href="#" class="fab fa-pinterest"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Noticias</h3>
+            <p>Se inscreva para receber mais informações</p>
+            <form action="">
+                <input type="email" name="" class="email" placeholder="Escreva seu e-mail" id="">
+                <input type="submit" value="Se inscreva" class="btn">
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<div class="credit">Unitau© todos os direitos reservados! </div>
+
+<!-- footer section ends -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="../script/script.js"></script>
+
+</body>
+
+</html>
