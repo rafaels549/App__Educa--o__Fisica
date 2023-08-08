@@ -870,23 +870,66 @@ iframe{
 .local svg{
    margin-left: 70px;
 }
-.missao{
-   
-  background-color: #222020;
-  padding: 30px;
-  width: 500px;
- 
-  
-}
+
 .visao{
   background-color: #222020;
    padding: 30px;
    width: 500px;
+   margin: 5px;
   
    
 }
 
+.boxp{
+  display: flex;
+ justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px;
+  
+}
+.boxp > div{
+  flex-basis: 500px;
+    padding: 10px;
+    
+    background-color: #222020;
+    margin: 5px;
+}
+.boxp h1{
+    font-size: 35px;
+    width: 100%;
+    text-align: left;
+    color:white  ;
+}
+.boxp p {
+  width: 100%;
+  color: white;
+  font-size: 15px;
+}
 
+
+.title{
+  display: flex;
+ align-items: center;
+ justify-content: center;
+  padding: 20px;
+  
+ 
+}
+
+.title i{
+  padding: 5px;
+  font-size: 25px;
+  color: #0e54afd2 ;
+  
+}
+ .lista ol{
+   font-size: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   margin-left: 30px;
+   color: white;
+ }
 @media (max-width: 991px) {
   
   .card{
