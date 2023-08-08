@@ -788,9 +788,10 @@ section {
 .sobre p{
   color: white;
   font-size: 20px;
-  width: 400px;
+  width: 100%;
 }
 .titulo{
+  
   text-align: left;
   color:#0e54afd2 ;
 }
@@ -867,13 +868,16 @@ iframe{
    margin-left: 70px;
 }
 .missao{
+
   background-color: #222020;
   padding: 30px;
+  width: 500px;
   
 }
 .visao{
   background-color: #222020;
    padding: 30px;
+   width: 500px;
   
    
 }
@@ -890,6 +894,8 @@ iframe{
   .sobre{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
   }
   .sobre div{
